@@ -1,0 +1,23 @@
+syntax="proto3";
+
+message SetCoefsRequest {
+    repeated float coefs = 1;
+
+}
+message SetCoefsResponse {
+    string error = 1;
+}
+message PredictRequest {
+    repeated float X = 1;
+}
+
+message PredictResponse {
+    float y = 3;
+    bool hit = 4;
+    string error = 5;
+}
+
+service ModelServer {
+  rpc SetCoefs (SetCoefsRequest) returns (SetCoefsResponse);
+  rpc Predict (PredictRequest) returns (PredictResponse);
+}

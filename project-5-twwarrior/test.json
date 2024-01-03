@@ -1,0 +1,25 @@
+{
+  "score": 90,
+  "full_score": 100,
+  "tests": {
+    "q1": "PASS (10/10)",
+    "q2": "PASS (10/10)",
+    "q3": "PASS (10/10)",
+    "q4": "PASS (10/10)",
+    "q5": "PASS (10/10)",
+    "q6": "PASS (10/10)",
+    "q7": [
+      "Traceback (most recent call last):\n",
+      "  File \"/home/tsaoching/project-5-twwarrior/tester.py\", line 38, in run\n    result = self.func()\n",
+      "  File \"/home/tsaoching/project-5-twwarrior/autograde.py\", line 127, in q7\n    output = nbutils.parse_dict_float_output(outputs)\n",
+      "  File \"/home/tsaoching/project-5-twwarrior/nbutils.py\", line 39, in parse_dict_float_output\n    eval_output = eval(parse_str_output(outputs))\n",
+      "  File \"<string>\", line 2\n",
+      "    0           2021  549300FQ2SN6TRRGB032           99999         WI       55055   \n",
+      "                           ^\n",
+      "SyntaxError: invalid decimal literal\n"
+    ],
+    "q8": "PASS (10/10)",
+    "q9": "PASS (10/10)",
+    "q10": "PASS (10/10)"
+  }
+}
